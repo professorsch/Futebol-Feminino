@@ -1,3 +1,9 @@
+:root{
+
+    --titulo-secindario: #1201ff;
+    --textos: #FFFFFF;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +35,7 @@
 
 .home{
     background-image: linear-gradient( #049c18,#eff304);
-    color: rgb(24, 3, 216);
+    color: var(--textos);
     display:grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
@@ -42,7 +48,7 @@
 }
 .h2t{
     padding: 10px;
-    color: black;
+    color: var(--titulo-secindario);
     text-align: center;
 }
 .fototexto{
@@ -52,4 +58,32 @@
 }
 .img{
     width: 600px;
+}
+
+@media screen and (max-width: 760px) {
+   
+    .cabecalho-titulo{
+        
+        font-size: 80%;
+    }
+    .cabecalho-lista-item{
+        font-size: 70%;
+    }
+    .home {
+        display: block;
+        align-items: center;
+        padding: 0px;
+      
+    }
+    .fototexto {
+        
+        padding: 20px;
+        text-align: center;
+    }
+    .img {
+        width: 75vw;
+        align-items: center;
+        margin: 0px;
+        
+    }
 }
