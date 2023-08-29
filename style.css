@@ -1,6 +1,6 @@
 :root{
 
-    --titulo-secindario: #1201ff;
+    --titulo-secindario: #1b1933;
     --textos: #FFFFFF;
 }
 
@@ -10,7 +10,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .cabecalho {
-    background-color: #049c18;
+    background-color: #498351;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@
     padding: 24px;    
 }
 .cabecalho-titulo{
-    color: blue;
+    color: var(--titulo-secindario);
     font-size: 50px;  
 
 }
@@ -32,9 +32,23 @@
     margin: 0 16px;
     font-size: 24px;
 }
+.introducao{
+    background-color: #498351;
+    
+    
+    
+}
+.introducao__texto{
+    text-align: center;
+    font-size: 20px;
+    color: var(--textos);
+    width: 60%;
+    margin: auto;
 
+
+}
 .home{
-    background-image: linear-gradient( #049c18,#eff304);
+    background-image: linear-gradient( #498351,#dbdbb4);
     color: var(--textos);
     display:grid;
     grid-template-columns: 50% 50%;
@@ -51,11 +65,11 @@
     color: var(--titulo-secindario);
     text-align: center;
 }
-.fototexto{
-   
+.fototexto{   
     text-align: center; 
     padding: 50px;   
 }
+
 .img{
     width: 600px;
 }
